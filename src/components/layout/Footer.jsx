@@ -15,17 +15,17 @@ const Footer = () => {
             </h2>
 
             <div className="mt-14 ">
-              <div className="grid grid-cols-[2fr_2fr_2fr]">
+              <div className="grid grid-row mx-16 lg:grid-cols-[2fr_2fr_2fr]">
                 <div className="relative pr-4">
                   <Image
                     imgSrc={logo}
                     imgAlt={logo}
                     className={
-                      "absolute -top-8 -left-[60px] w-[200px] h-[120px]"
+                      "absolute -top-8 w-[200px] h-[120px]"
                     }
                   />
                   <div className="mt-20">
-                    <p className="text-lg text-black/60 leading-6">
+                    <p className="text-lg text-black/60 leading-6 text-let">
                       “Hi, I am Sadia, a Frontend Developer turning ideas into
                       interactive digital experiences. Let us build something
                       amazing together, bringing visions to life with clean code
@@ -78,8 +78,8 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="text-center">
-                  <h4 className="text-bold text-xl text-black hover:text-tirtiary transition-all duration-300 ">Support</h4>
+                <div className="text-center m-auto">
+                  <h4 className="mt-12 lg:mt-0 text-bold text-xl text-black hover:text-tirtiary transition-all duration-300 ">Support</h4>
                   <div className="flex items-center gap-x-4 mt-[30px]">
                     <FaLocationDot className="text-lg text-black/60 hover:text-tirtiary transition-all duration-300" />
                     <p className=" text-lg text-black/60">

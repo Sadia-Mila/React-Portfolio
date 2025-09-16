@@ -19,15 +19,15 @@ const Service = () => {
             text={"SERVICES"}
             as={"h5"}
             className={
-              "text-medium text-base text-secondary flex justify-center items-center tracking-[1.5px]"
+              "text-base font-medium text-secondary flex justify-center items-center tracking-[1.5px]"
             }
           />
           <Heading
             text={"What I Do For My Customer"}
             as={"h4"}
-            className="font-semibold text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent"
+            className="text-[36px] lg:text-[40px] font-semibold leading-18 tracking-wide text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent"
           />
-          <p className="text-base leading-6 tracking-wider w-[800px] m-auto text-center text-[#121212] mt-3">
+          <p className="w-[60% ]text-base leading-6 lg:tracking-wider lg:w-[50%] m-auto text-center text-[#121212] mt-3">
             I build responsive, user-friendly, and scalable web applications
             with a focus on performance, interactivity, and great UI/UX. I can
             also convert Figma designs into fully functional React.js
@@ -35,9 +35,9 @@ const Service = () => {
           </p>
           <div className="py-12">
             <Container>
-              <div className="-mx-8">
-                <Flex className={" gap-x-8 gap-y-8 flex-wrap"}>
-                  <div className="w-[30%] h-[500px] rounded-lg border-12 border-gray-300 ">
+              <div className="-mx-4">
+                <Flex className={"flex-wrap item-center justify-center gap-y-4 lg:flex lg:gap-x-4 "}>
+                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg: lg:h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={webDesign}
@@ -68,7 +68,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="w-[30%] h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={mobile}
@@ -84,22 +84,22 @@ const Service = () => {
 
                     <div className="pr-4 py-5 text-lg text-justify pl-6">
                       <ul>
-                        <li className="list-disc [&::marker]:text-secondary text-lg leading-7 mb-3 ">
+                        <li className="list-disc [&::marker]:text-secondary text-lg leading-6 mb-3 ">
                           Convert Figma / PSD / XD designs into pixel-perfect
                           React applications
                         </li>
                       </ul>
-                      <li className="list-disc [&::marker]:text-secondary text-lg leading-7 mb-3 ">
+                      <li className="list-disc [&::marker]:text-secondary text-lg leading-6 mb-3 ">
                         Bring your design to life while maintaining clean code
                         and great performance
                       </li>
-                      <li className="list-disc [&::marker]:text-secondary text-lg leading-7 mb-3 ">
+                      <li className="list-disc [&::marker]:text-secondary text-lg leading-6 mb-3 ">
                         Ensure cross-browser compatibility and mobile
                         responsiveness
                       </li>
                     </div>
                   </div>
-                  <div className="w-[30%] h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service4}
@@ -128,7 +128,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="w-[30%] h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="w-[70%] h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service5}
@@ -158,7 +158,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="w-[30%] h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service6}
@@ -188,7 +188,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="w-[30%] h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service7}

@@ -12,10 +12,8 @@ const About = () => {
         <div className="py-12 bg-blue-50">
           <Container>
             <Flex className={"justify-between gap-x-12 items-center"}>
-              {/* <Image className={"w-full h-full border-4 border-tirtiary "} imgSrc={profilePictre}   imgAlt={profilePictre}
-            /> */}
-
-              <div className=" w-[35%] relative">
+           
+              <div className="hidden lg:block w-[35%] relative">
                 {/* Your image */}
                 <Image
                   className={"w-full h-full border-4 border-tirtiary "}
@@ -28,7 +26,7 @@ const About = () => {
                 <span className=" absolute bottom-0 right-0 translate-x-3 translate-y-3 w-12 h-12 border-b-4 border-r-4 border-secondary"></span>
               </div>
 
-              <div className="w-[65%]">
+              <div className="w-full lg:w-[65%]">
                 <Heading
                   className={
                     "text-[40px] font-bold text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent mb-8"
@@ -36,7 +34,7 @@ const About = () => {
                   text={"About Me"}
                   as={"h2"}
                 />
-                <div className="">
+                <div className="w-[80%] m-auto">
                   <Heading
                     className={"text-lg text-black text-justify mb-6"}
                     text={

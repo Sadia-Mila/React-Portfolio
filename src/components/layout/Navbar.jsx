@@ -6,6 +6,7 @@ import Flex from "../Flex";
 import Button from "../Button";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { ImCross } from "react-icons/im";
 
 
 const Navbar = () => {
@@ -19,8 +20,8 @@ const Navbar = () => {
   return (
     <>
       <div className="py-1 bg-gradient-to-r from-blue-200 to-secondary">
-        <Container>
-          <Flex className={"justify-between"}>
+        <Container className={"w-full"}>
+          <Flex className={"justify-between "}>
             <div className="">
               <Image
                 className={"w-[200px] h-[80px]"}
@@ -42,11 +43,11 @@ const Navbar = () => {
               </ul>
                {/* Desktop View */}
                {/* Mobile View */}
-               <div className="justify-end">
-                <button className={"lg:hidden py-2 px-3 bg-white text-black rounded-lg font-2xl cursor-pointer"} onClick={toggleBtn}>{resNav? "X": <FaBars/>}</button>
+               <div className="justify-between">
+                <button className={"lg:hidden  mr-10 py-2 px-3 bg-white text-black rounded-lg font-2xl cursor-pointer relative"} onClick={toggleBtn}>{resNav ? <ImCross size={22} /> : <FaBars size={22}/>}</button>
                </div>
                {resNav &&
-                <ul className={"lg:hidden "}>
+                <ul className={"lg:hidden absolute top-[22%] left-0  w-full bg-gradient-to-r from-blue-200 to-secondary h-auto text-center z-10 pt-8 pb-8"}>
                 <li className={"font-bold text-white text-base hover:text-tirtiary transition-all duration-300"}><a href="#home">Home</a></li>
                 <li className={"font-bold text-white text-base hover:text-tirtiary  transition-all duration-300"}><a href="#about">About Me</a></li>
                 <li className={"font-bold text-white text-base hover:text-tirtiary transition-all duration-300"}><a href="#service">Services</a></li>
@@ -58,9 +59,9 @@ const Navbar = () => {
               </ul>}
                {/* Mobile View */}
             </nav>
-            <div className="">
+            <div className="hidden lg:block ">
               <a href="#contact">
-              <Button  className={"hidden lg:inline-block bg-gradient-to-r from-secondary to-tirtiary"} btnText={"Contact Me"}/></a>
+              <Button  className={"bg-gradient-to-r from-secondary to-tirtiary"} btnText={"Contact Me"}/></a>
             </div>
           </Flex>
         </Container>

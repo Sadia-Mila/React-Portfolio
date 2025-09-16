@@ -14,8 +14,8 @@ const Banner = () => {
       <section id="home">
         <div className="py-10">
           <Container>
-            <div className="flex items-center justify-around ">
-              <div className="w-[40%]">
+            <div className="flex flex-wrap items-center justify-center lg:justify-around ">
+              <div className="w-[80%] lg:w-[40%] text-center">
                 <Heading
                   className={
                     "text-secondary text-base uppercase tracking-widest pb-6"
@@ -37,7 +37,7 @@ const Banner = () => {
                     as={"h1"}
                   />
                   <Image
-                    className={"w-[60px] h-[50px] absolute top-[67%] left- -translate-y-[67%] "}
+                    className={"top-[49%] left-1/2 w-[60px] h-[50px] absolute lg:top-[52%] lg:left-[40%] lg:-translate-y-[52%] "}
                     imgSrc={andImg}
                     imgAlt={andImg}
                   />
@@ -52,7 +52,7 @@ const Banner = () => {
                   text={"with 4 years of experience."}
                   as={"p"}
                 />
-                <div className="flex relative mt-6">
+                <div className="flex justify-center items-center relative mt-6">
                   <Button
                     onClick={() =>
                       window.open("https://github.com/Sadia-Mila", "_blank")
@@ -65,28 +65,20 @@ const Banner = () => {
 
                   <Button
                     className={
-                      " pl-12 bg-gradient-to-r from-secondary to-tirtiary hover:border-2 hover:border-tirtiary hover:text-black group transition-all duration-300"
+                      " text-sm pl-12 bg-gradient-to-r from-secondary to-tirtiary hover:border-2 hover:border-tirtiary hover:text-black group transition-all duration-300"
                     }
                     btnText={"Download My Resume"}
                     onClick={() => window.open("/CV of Sadia.pdf", "_blank")}
                   />
                   <FiDownload
                     className={
-                      "text-2xl text-white absolute top-[50%] right-37 -translate-y-[50%] -translate-x-37 mr-3 hover:text-black transition-all duration-300"
+                      "hidden lg:inline-block text-2xl text-white absolute top-[50%] left-[44%] -translate-y-[50%] mr-3 hover:text-black transition-all duration-300"
                     }
                   />
                 </div>
               </div>
 
-              {/* <div className="">
-              <Image
-                className={"rounded-full border-4 border-tirtiary"} 
-                imgSrc={profilePicture2}
-                imgAlt={profilePicture2}
-              />
-            </div> */}
-
-              <div className="relative inline-block">
+              <div className="mt-12 relative inline-block lg:mt-0 ">
                 {/* Your image */}
                 <Image
                   className={

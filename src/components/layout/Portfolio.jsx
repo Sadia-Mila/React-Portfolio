@@ -30,7 +30,7 @@ const Portfolio = () => {
             as={"h4"}
             className="font-semibold text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary from 0-95% to-tirtiary to-95%-100% bg-clip-text text-transparent"
           />
-          <p className="text-base leading-6 tracking-wider w-[800px] m-auto text-center text-[#121212] mt-3">
+          <p className=" text-sm lg:text-base leading-6 lg:tracking-wider w-[70%] m-auto text-center text-[#121212] mt-3">
             I build responsive, user-friendly, and scalable web applications
             with a focus on performance, interactivity, and great UI/UX. I can
             also convert Figma designs into fully functional React.js
@@ -39,7 +39,7 @@ const Portfolio = () => {
 
           <div className="pt-12">
             <Container>
-              <Flex className={"flex justify-between gap-x-8 gap-y-12 flex-wrap"}>
+              <Flex className={"lg:flex lg:justify-between gap-x-3 gap-y-8 flex-wrap justify-center items-center"}>
                 <div className="w-30% h-[400px]">
                   <Image imgSrc={selectedWorks} imgAlt={selectedWorks} />
                 </div>

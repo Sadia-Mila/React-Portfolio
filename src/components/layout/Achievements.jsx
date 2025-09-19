@@ -8,11 +8,11 @@ const Achievements = () => {
   return (
     <>
       <section id="achievement">
-        <div className="py-12 bg-blue-200">
+        <div className="hidden lg:block py-12 bg-blue-200">
           <Heading
             text={"My Achievements"}
             as={"h4"}
-            className=" text-4xl lg:text-[40px] font-semibold  text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent mb-8"
+            className=" text-3xl lg:text-[40px] font-semibold  text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent mb-8"
           />
           <Container>
             <Flex className={"flex items-center justify-center gap-x-4 "}>

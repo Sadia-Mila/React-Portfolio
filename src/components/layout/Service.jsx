@@ -25,19 +25,19 @@ const Service = () => {
           <Heading
             text={"What I Do For My Customer"}
             as={"h4"}
-            className="text-[36px] lg:text-[40px] font-semibold leading-18 tracking-wide text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent"
+            className="text-[25px] md:text-[30px] lg:text-[40px] font-semibold leading-18 tracking-wide text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent"
           />
-          <p className="w-[60% ]text-base leading-6 lg:tracking-wider lg:w-[50%] m-auto text-center text-[#121212] mt-3">
+          <p className="w-[60% ] md:w-[58%] text-base leading-6 lg:tracking-wider lg:w-[50%] m-auto text-center text-[#121212] mt-3">
             I build responsive, user-friendly, and scalable web applications
             with a focus on performance, interactivity, and great UI/UX. I can
             also convert Figma designs into fully functional React.js
             applications, bridging design and development seamlessly.
           </p>
-          <div className="py-12">
+          <div className="pt-10 pb-6 md:pt-10 md:pb-6">
             <Container>
               <div className="-mx-4">
-                <Flex className={"flex-wrap item-center justify-center gap-y-4 lg:flex lg:gap-x-4 "}>
-                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg: lg:h-[500px] rounded-lg border-12 border-gray-300 ">
+                <Flex className={"flex-wrap item-center justify-center md:gap-x-4 gap-y-4 lg:flex lg:gap-x-4 "}>
+                  <div className="w-[90%] md:w-[40%] lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={webDesign}
@@ -68,7 +68,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="w-[90%] md:w-[40%] lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={mobile}
@@ -99,7 +99,7 @@ const Service = () => {
                       </li>
                     </div>
                   </div>
-                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="w-[90%] md:w-[40%] lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service4}
@@ -128,7 +128,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="w-[70%] h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="w-[90%] md:w-[40%] lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service5}
@@ -158,7 +158,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] lg:h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="w-[90%] md:w-[40%] lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service6}
@@ -188,7 +188,7 @@ const Service = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="sm:w-[70%] sm:h-auto lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
+                  <div className="w-[90%] md:w-[40%] lg:w-[28%] h-[500px] rounded-lg border-12 border-gray-300 ">
                     <div className="relative group">
                       <Image
                         imgSrc={service7}

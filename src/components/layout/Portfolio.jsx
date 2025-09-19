@@ -28,9 +28,9 @@ const Portfolio = () => {
           <Heading
             text={"Some of my Works"}
             as={"h4"}
-            className="font-semibold text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary from 0-95% to-tirtiary to-95%-100% bg-clip-text text-transparent"
+            className="text-[36px] font-semibold lg:text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary from 0-95% to-tirtiary to-95%-100% bg-clip-text text-transparent"
           />
-          <p className=" text-sm lg:text-base leading-6 lg:tracking-wider w-[70%] m-auto text-center text-[#121212] mt-3">
+          <p className="w-[90%] mt-0 leading-5 text-sm lg:text-base lg:leading-6 lg:tracking-wider lg:w-[70%] m-auto text-center text-[#121212] lg:mt-3">
             I build responsive, user-friendly, and scalable web applications
             with a focus on performance, interactivity, and great UI/UX. I can
             also convert Figma designs into fully functional React.js

@@ -44,10 +44,10 @@ const Navbar = () => {
                {/* Desktop View */}
                {/* Mobile View */}
                <div className="justify-between">
-                <button className={"lg:hidden  mr-10 py-2 px-3 bg-white text-black rounded-lg font-2xl cursor-pointer relative"} onClick={toggleBtn}>{resNav ? <ImCross size={22} /> : <FaBars size={22}/>}</button>
+                <button className={"lg:hidden  mr-10 py-2 px-3 bg-white text-black rounded-lg font-lg cursor-pointer relative"} onClick={toggleBtn}>{resNav ? <ImCross size={16}/> : <FaBars size={18}/>}</button>
                </div>
                {resNav &&
-                <ul className={"lg:hidden absolute top-[22%] left-0  w-full bg-gradient-to-r from-blue-200 to-secondary h-auto text-center z-10 pt-8 pb-8"}>
+                <ul className={"lg:hidden absolute top-[9%] md:top-[6%] left-0  w-full bg-gradient-to-r from-blue-200 to-secondary opacity-90 h-auto text-center z-10 pt-8 pb-8"}>
                 <li className={"font-bold text-white text-base hover:text-tirtiary transition-all duration-300"}><a href="#home">Home</a></li>
                 <li className={"font-bold text-white text-base hover:text-tirtiary  transition-all duration-300"}><a href="#about">About Me</a></li>
                 <li className={"font-bold text-white text-base hover:text-tirtiary transition-all duration-300"}><a href="#service">Services</a></li>

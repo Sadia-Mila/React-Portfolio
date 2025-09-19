@@ -25,30 +25,30 @@ const Banner = () => {
                 />
                 <div className={"relative"}>
                   <Heading
-                    className={" text-secondary text-6xl font-bold mb-3 "}
+                    className={" text-4xl text-secondary lg:text-6xl font-bold mb-3 "}
                     text={"My name is "}
                     as={"h1"}
                   />
                   <Heading
                     className={
-                      "bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent text-6xl font-bold mb-18"
+                      "text-3xl bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent l:text-6xl font-bold mb-18"
                     }
                     text={"Sadia Haque"}
                     as={"h1"}
                   />
                   <Image
-                    className={"top-[49%] left-1/2 w-[60px] h-[50px] absolute lg:top-[52%] lg:left-[40%] lg:-translate-y-[52%] "}
+                    className={"w-[10%] md:w-[5%] h-auto top-[54%] md:top-[54%] left-1/2 lg:w-[8%] absolute lg:top-[60%] lg:left-[40%] lg:-translate-y-[60%] "}
                     imgSrc={andImg}
                     imgAlt={andImg}
                   />
                   <Heading
-                    className={"text-secondary text-4xl font-bold leading-16 "}
+                    className={"-mt-5 leading-10 text:3xl text-secondary lg:text-4xl font-bold lg:leading-16 "}
                     text={`I'm a MERN Stack Developer`}
                     as={"h1"}
                   />
                 </div>
                 <Heading
-                  className={"text-lg pr-6"}
+                  className={"text:sm lg:text-lg pr-6 "}
                   text={"with 4 years of experience."}
                   as={"p"}
                 />
@@ -58,14 +58,14 @@ const Banner = () => {
                       window.open("https://github.com/Sadia-Mila", "_blank")
                     }
                     className={
-                      "py-3 px-4 text-sm bg-gradient-to-r from-secondary to-tirtiary mr-5"
+                      "whitespace-nowrap py-2 px:3 lg:py-3 lg:px-4 text-sm bg-gradient-to-r from-secondary to-tirtiary mr-5"
                     }
                     btnText={"Visit My Work"}
                   />
 
                   <Button
                     className={
-                      " text-sm pl-12 bg-gradient-to-r from-secondary to-tirtiary hover:border-2 hover:border-tirtiary hover:text-black group transition-all duration-300"
+                      " whitespace-nowrap text-sm lg:pl-12 bg-gradient-to-r from-secondary to-tirtiary hover:border-2 hover:border-tirtiary hover:text-black group transition-all duration-300"
                     }
                     btnText={"Download My Resume"}
                     onClick={() => window.open("/CV of Sadia.pdf", "_blank")}
@@ -78,18 +78,18 @@ const Banner = () => {
                 </div>
               </div>
 
-              <div className="mt-12 relative inline-block lg:mt-0 ">
+              <div className="m-auto mt-12 relative inline-block lg:mt-0 ">
                 {/* Your image */}
                 <Image
                   className={
-                    "rounded-full  relative z-10 transition-transform duration-400 hover:scale-110"
+                    "rounded-full m-auto w-[96%] lg:w-full relative z-10 transition-transform duration-400 hover:scale-105"
                   }
                   imgSrc={profilePicture2}
                   imgAlt={profilePicture2}
                 />
 
                 {/* outer border */}
-                <div className="absolute -inset-0 -m-2 rounded-full border-none bg-gradient-to-t from-secondary to-white   blur-[0.8px]"></div>
+                <div className="hidden md:block absolute -inset-0 -m-2 rounded-full border-none bg-gradient-to-t from-secondary to-white blur-[0.8px]"></div>
               </div>
             </div>
           </Container>

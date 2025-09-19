@@ -10,12 +10,12 @@ const Footer = () => {
       <section id="contact">
         <div className="pt-10 bg-gradient-to-r from-blue-200 to-secondary">
           <Container>
-            <h2 className="text-2xl font-semibold text-black/60 text-center hover:text-tirtiary transition-all duration-300">
+            <h2 className="w-[80%] m-auto lg:w-full text-lg lg:text-2xl font-semibold text-black/60 text-center hover:text-tirtiary transition-all duration-300">
               Are you interested working with me? Lets start .........
             </h2>
 
             <div className="mt-14 ">
-              <div className="grid grid-row mx-16 lg:grid-cols-[2fr_2fr_2fr]">
+              <div className="grid grid-row mx-16 lg:grid-cols-[2fr_2fr_2fr] md:grid-cols-[2fr_1fr_1fr]">
                 <div className="relative pr-4">
                   <Image
                     imgSrc={logo}
@@ -34,7 +34,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="">
-                  <h4 className="text-bold text-xl text-black text-center hover:text-tirtiary transition-all duration-300">
+                  <h4 className="mt-6 lg:mt-0 m-auto text-bold text-xl text-black text-center hover:text-tirtiary transition-all duration-300">
                     Menu
                   </h4>
 
@@ -79,7 +79,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="text-center m-auto">
-                  <h4 className="mt-12 lg:mt-0 text-bold text-xl text-black hover:text-tirtiary transition-all duration-300 ">Support</h4>
+                  <h4 className="mt-12 md:-mt-8 lg:mt-0 text-bold text-xl text-black hover:text-tirtiary transition-all duration-300 ">Support</h4>
                   <div className="flex items-center gap-x-4 mt-[30px]">
                     <FaLocationDot className="text-lg text-black/60 hover:text-tirtiary transition-all duration-300" />
                     <p className=" text-lg text-black/60">
@@ -105,7 +105,7 @@ const Footer = () => {
 
           <hr className="mt-6 text-black/40" />
 
-          <p className="text-lg text-black/50 py-6 text-center">
+          <p className="w-[90%] m-auto text-sm lg:text-lg text-black/50 py-6 text-center">
             "Thanks for visiting my portfolio!{" "}
             <span className="text-tirtiary font-bold">&copy; </span>2025 which
             is crafted with passion and creativity"

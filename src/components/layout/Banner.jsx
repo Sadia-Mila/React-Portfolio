@@ -1,15 +1,13 @@
-import React from "react";
-import Image from "../Image";
-import Heading from "../Heading";
-import Container from "../Container";
-import andImg from "../../assets/andImg.png";
+import { useEffect } from "react";
 import Button from "../Button";
-import { FiDownload } from "react-icons/fi";
+import Container from "../Container";
+import Heading from "../Heading";
+import Image from "../Image";
 import profilePicture2 from "/src/assets/profilePicture2.png";
-import { Link } from "react-router-dom";
+import AOS from 'aos'
 
 const Banner = () => {
-  return (
+   return (
     <>
       <section id="home">
         <div className="py-10">
@@ -23,7 +21,10 @@ const Banner = () => {
                   text={"Hello,"}
                   as={"h6"}
                 />
-                <div className={"relative"}>
+                <div className={"relative"} data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="3000">
                   <Heading
                     className={" text-4xl text-secondary lg:text-6xl font-bold mb-3 "}
                     text={"My name is "}
@@ -31,18 +32,13 @@ const Banner = () => {
                   />
                   <Heading
                     className={
-                      "text-3xl bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent l:text-6xl font-bold mb-18"
-                    }
-                    text={"Sadia Haque"}
+                      "text-3xl bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent l:text-6xl font-bold mb-3"} 
+                      text={"Sadia Haque"}
                     as={"h1"}
                   />
-                  <Image
-                    className={"w-[10%] md:w-[5%] h-auto top-[54%] md:top-[54%] left-1/2 lg:w-[8%] absolute lg:top-[60%] lg:left-[40%] lg:-translate-y-[60%] "}
-                    imgSrc={andImg}
-                    imgAlt={andImg}
-                  />
+            
                   <Heading
-                    className={"-mt-5 leading-10 text:3xl text-secondary lg:text-4xl font-bold lg:leading-16 "}
+                    className={"text:3xl text-secondary lg:text-4xl font-bold lg:leading-16 "}
                     text={`I'm a MERN Stack Developer`}
                     as={"h1"}
                   />
@@ -58,27 +54,22 @@ const Banner = () => {
                       window.open("https://github.com/Sadia-Mila", "_blank")
                     }
                     className={
-                      "whitespace-nowrap py-2 px:3 lg:py-3 lg:px-4 text-sm bg-gradient-to-r from-secondary to-tirtiary mr-5"
+                      "py-2 px-3 text-sm bg-gradient-to-r from-secondary to-tirtiary/60 mr-5"
                     }
                     btnText={"Visit My Work"}
                   />
 
                   <Button
                     className={
-                      " whitespace-nowrap text-sm lg:pl-12 bg-gradient-to-r from-secondary to-tirtiary hover:border-2 hover:border-tirtiary hover:text-black group transition-all duration-300"
+                      " py-2 px-2 bg-gradient-to-r from-secondary to-tirtiary/60 hover:border-1 hover:border-secondary/80 group transition-all duration-300"
                     }
                     btnText={"Download My Resume"}
                     onClick={() => window.open("/CV of Sadia.pdf", "_blank")}
                   />
-                  <FiDownload
-                    className={
-                      "hidden lg:inline-block text-2xl text-white absolute top-[50%] left-[44%] -translate-y-[50%] mr-3 hover:text-black transition-all duration-300"
-                    }
-                  />
                 </div>
               </div>
 
-              <div className="m-auto mt-12 relative inline-block lg:mt-0 ">
+              <div className="m-auto mt-12 relative inline-block lg:mt-0  " data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 {/* Your image */}
                 <Image
                   className={

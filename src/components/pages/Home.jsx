@@ -13,7 +13,6 @@ import ScrollTop from "../ScrollTop"
 const Home = () => {
   return (
     <>
-    <Navbar/>
     <Banner/>
     <About/>
     <Service/>
@@ -21,8 +20,7 @@ const Home = () => {
     <MySkills/>
     <Achievements/>
     <ScrollTop/>
-    <Footer/>    
-    </>
+      </>
     
     
 

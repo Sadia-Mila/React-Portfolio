@@ -11,12 +11,12 @@ const About = () => {
       <section id="about">
         <div className="py-12 bg-blue-50">
           <Container>
-            <Flex className={"justify-between gap-x-12 items-center"}>
+            <Flex className={"justify-between gap-x-3 items-center"}>
            
-              <div className="hidden lg:block w-[35%] relative">
+              <div className="hidden lg:block w-[35%] relative" data-aos="fade-right" data-aos-duration="2000">
                 {/* Your image */}
                 <Image
-                  className={"w-full h-full border-4 border-tirtiary "}
+                  className={"w-full h-full border-4 border-tirtiary/50 "}
                   imgSrc={profilePictre}
                   imgAlt={profilePictre}
                 />
@@ -29,12 +29,12 @@ const About = () => {
               <div className="w-full lg:w-[65%]">
                 <Heading
                   className={
-                    "text-[40px] font-bold text-center bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent mb-8"
+                    "text-[40px] font-bold text-center bg-gradient-to-r from-secondary to-tirtiary/80 bg-clip-text text-transparent mb-8"
                   }
                   text={"About Me"}
                   as={"h2"}
                 />
-                <div className="w-[80%] m-auto">
+                <div className="w-[80%] m-auto" data-aos="fade-left" data-aos-duration="1500">
                   <Heading
                     className={"text-lg text-black text-justify mb-6"}
                     text={

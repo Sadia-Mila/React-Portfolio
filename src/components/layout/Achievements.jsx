@@ -16,7 +16,10 @@ const Achievements = () => {
           />
           <Container>
             <Flex className={"flex items-center justify-center gap-x-4 "}>
-              <div className="text-center w-[20%] h-auto rounded-lg bg-black/10 p-5">
+              <div className="text-center w-[20%] h-auto rounded-lg bg-black/10 p-5" data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2500" >
                 <div className="flex justify-center items-center">
                   <CountUp
                     end={4}
@@ -61,7 +64,10 @@ const Achievements = () => {
                   <span className="lg:inline block">Clients</span>
                 </h5>
               </div>
-              <div className="text-center w-[20%] h-auto rounded-lg bg-black/10 p-5">
+              <div className="text-center w-[20%] h-auto rounded-lg bg-black/10 p-5" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2000">
                 <div className="flex justify-center items-center">
                   <CountUp
                     end={2}

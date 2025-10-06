@@ -17,7 +17,7 @@ const Portfolio = () => {
   return (
     <>
       <section id="portfolio">
-        <div className="py-12 bg-blue-50">
+        <div className="py-12 bg-white">
           <Heading
             text={"Portfolio"}
             as={"h5"}
@@ -28,7 +28,7 @@ const Portfolio = () => {
           <Heading
             text={"Some of my Works"}
             as={"h4"}
-            className="text-[36px] font-semibold lg:text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary from 0-95% to-tirtiary to-95%-100% bg-clip-text text-transparent"
+            className="text-[36px] font-semibold lg:text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary from 0-95% to-tirtiary/60 bg-clip-text text-transparent"
           />
           <p className="w-[90%] mt-0 leading-5 text-sm lg:text-base lg:leading-6 lg:tracking-wider lg:w-[70%] m-auto text-center text-[#121212] lg:mt-3">
             I build responsive, user-friendly, and scalable web applications
@@ -40,28 +40,28 @@ const Portfolio = () => {
           <div className="pt-12">
             <Container>
               <Flex className={"lg:flex lg:justify-between gap-x-3 gap-y-8 flex-wrap justify-center items-center"}>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks} imgAlt={selectedWorks} />
                 </div>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks2} imgAlt={selectedWorks2} />
                 </div>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks4} imgAlt={selectedWorks4} />
                 </div>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks5} imgAlt={selectedWorks5} />
                 </div>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks7} imgAlt={selectedWorks7} />
                 </div>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks6} imgAlt={selectedWorks6} />
                 </div>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks8} imgAlt={selectedWorks8} />
                 </div>
-                <div className="w-30% h-[400px]">
+                <div className="w-30% h-[400px] shadow-2xl">
                   <Image imgSrc={selectedWorks9} imgAlt={selectedWorks9} />
                 </div>
               </Flex>

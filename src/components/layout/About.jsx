@@ -16,7 +16,7 @@ const About = () => {
               <div className="hidden lg:block w-[35%] relative" data-aos="fade-right" data-aos-duration="2000">
                 {/* Your image */}
                 <Image
-                  className={"w-full h-full border-4 border-tirtiary/50 "}
+                  className={"w-full h-full border-4 border-black/70 "}
                   imgSrc={profilePictre}
                   imgAlt={profilePictre}
                 />
@@ -29,7 +29,7 @@ const About = () => {
               <div className="w-full lg:w-[65%]">
                 <Heading
                   className={
-                    "text-[40px] font-bold text-center bg-gradient-to-r from-secondary to-tirtiary/80 bg-clip-text text-transparent mb-8"
+                    "text-[40px] font-bold text-black/70 text-center mb-8"
                   }
                   text={"About Me"}
                   as={"h2"}

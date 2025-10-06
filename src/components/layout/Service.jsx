@@ -19,15 +19,15 @@ const Service = () => {
             text={"SERVICES"}
             as={"h5"}
             className={
-              "text-base font-medium text-secondary flex justify-center items-center tracking-[1.5px]"
+              "text-base font-medium text-black/60 flex justify-center items-center tracking-[1.5px]"
             }
           />
           <Heading
             text={"What I Do For My Customer"}
             as={"h4"}
-            className="text-[25px] md:text-[30px] lg:text-[40px] font-semibold leading-18 tracking-wide text-center bg-gradient-to-r from-secondary to-tirtiary/80 bg-clip-text text-transparent"
+            className="text-[40px] md:text-[30px] lg:text-[40px] font-bold leading-18 text-center text-black/80"
           />
-          <p className="w-[70% ] md:w-[58%] text-base leading-6 lg:tracking-wider lg:w-[60%] m-auto text-center text-[#121212] mt-3">
+          <p className="w-[60% ] md:w-[58%] text-base leading-6 lg:w-[60%] m-auto text-center text-black/60 mt-3">
             I build responsive, user-friendly, and scalable web applications
             with a focus on performance, interactivity, and great UI/UX. I can
             also convert Figma designs into fully functional React.js
@@ -58,7 +58,7 @@ const Service = () => {
                       </p>
                     </div>
 
-                    <div className=" px-8 py-5 text-md text-justify ">
+                    <div className=" px-8 py-5 text-md text-black/70 text-justify ">
                       <ul>
                         <li className="list-disc [&::marker]:text-secondary leading-4 mb-3">
                           Build modern, responsive, and scalable websites using
@@ -92,7 +92,7 @@ const Service = () => {
                       </p>
                     </div>
 
-                    <div className="px-8 py-5 text-md text-justify">
+                    <div className="px-8 py-5 text-md text-black/70 text-justify">
                       <ul>
                         <li className="list-disc [&::marker]:text-secondary leading-4 mb-3 ">
                           Convert Figma / PSD / XD designs into pixel-perfect
@@ -126,7 +126,7 @@ const Service = () => {
                       </p>
                     </div>
 
-                    <div className="px-8 py-5 text-md text-justify">
+                    <div className="px-8 py-5 text-md text-black/70 text-justify">
                       <ul>
                         <li className="list-disc [&::marker]:text-secondary leading-5 mb-3">
                           Develop reusable and modular React components
@@ -158,7 +158,7 @@ const Service = () => {
                       </p>
                     </div>
 
-                    <div className="px-8 py-5 text-md text-justify">
+                    <div className="px-8 py-5 text-md text-black/70 text-justify">
                       <ul>
                         <li className="list-disc [&::marker]:text-secondary leading-5 mb-3">
                           Connect frontend with REST APIs or mock/dummy data
@@ -191,7 +191,7 @@ const Service = () => {
                       </p>
                     </div>
 
-                    <div className="px-8 py-5 text-md text-justify">
+                    <div className="px-8 py-5 text-md text-black/70 text-justify">
                       <ul>
                         <li className="list-disc [&::marker]:text-secondary leading-5 mb-3">
                           Improve website performance and load speed
@@ -226,7 +226,7 @@ const Service = () => {
                       </p>
                     </div>
 
-                    <div className="px-8 py-5 text-md text-justify">
+                    <div className="px-8 py-5 text-md text-black/70 text-justify">
                       <ul>
                         <li className="list-disc [&::marker]:text-secondary leading-5 mb-3">
                           Fix layout or design issues in existing projects

@@ -22,13 +22,13 @@ const Portfolio = () => {
             text={"Portfolio"}
             as={"h5"}
             className={
-              "text-medium text-base text-secondary flex justify-center items-center tracking-[1.5px]"
+              "font-medium text-base text-black/60 flex uppercase justify-center items-center tracking-[1.5px]"
             }
           />
           <Heading
             text={"Some of my Works"}
             as={"h4"}
-            className="text-[36px] font-semibold lg:text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary from 0-95% to-tirtiary/60 bg-clip-text text-transparent"
+            className="text-[40px] font-bold lg:text-[44px] leading-18 text-center text-black/80"
           />
           <p className="w-[90%] mt-0 leading-5 text-sm lg:text-base lg:leading-6 lg:tracking-wider lg:w-[70%] m-auto text-center text-[#121212] lg:mt-3">
             I build responsive, user-friendly, and scalable web applications

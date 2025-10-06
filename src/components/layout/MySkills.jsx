@@ -16,11 +16,11 @@ import Heading from "../Heading";
 const MySkills = () => {
   return (
     <section id="skills">
-      <div className="py-8 lg:py-12 bg-blue-100">
+      <div className="py-8 lg:py-12 bg-[linear-gradient(336deg,rgba(255,245,230,1)_0%,rgba(255,255,255,0)_48%,rgba(74,115,255,1)_120%)]">
         <Heading
           text={"My Skills"}
           as={"h4"}
-          className="font-semibold text-[44px] leading-18 tracking-wide text-center bg-gradient-to-r from-secondary to-tirtiary/80 bg-clip-text text-transparent mb-8"
+          className="font-bold text-[40px] leading-18  text-center text-black/80 mb-8"
         />
         <div className="flex justify-center gap-x-5 gap-y-5 flex-wrap">
           <div className=" w-[40%] md:w-[22%] lg:w-[14%] h-[150px] py-8 px-auto justify-items-center bg-black/10 rounded-lg" data-aos="fade-down-right" data-aos-duration="2500">

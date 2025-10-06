@@ -9,14 +9,15 @@ import AOS from 'aos'
 const Banner = () => {
    return (
     <>
-      <section id="home">
-        <div className="py-10">
+      <section id="home" className= "py-[150px] bg-[linear-gradient(296deg,rgba(255,245,230,1)_0%,rgba(255,255,255,0)_28%,rgba(74,115,255,1)_110%)]"
+>
+        <div>
           <Container>
             <div className="flex flex-wrap items-center justify-center lg:justify-around ">
               <div className="w-[80%] lg:w-[40%] text-center">
                 <Heading
                   className={
-                    "text-secondary text-base uppercase tracking-widest pb-6"
+                    "text-black/60 text-base uppercase tracking-widest pb-6"
                   }
                   text={"Hello,"}
                   as={"h6"}
@@ -26,25 +27,25 @@ const Banner = () => {
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="3000">
                   <Heading
-                    className={" text-4xl text-secondary lg:text-6xl font-bold mb-3 "}
+                    className={"text-lg text-black/70 lg:text-3xl font-bold mb-3 "}
                     text={"My name is "}
                     as={"h1"}
                   />
                   <Heading
                     className={
-                      "text-3xl bg-gradient-to-r from-secondary to-tirtiary bg-clip-text text-transparent l:text-6xl font-bold mb-3"} 
+                      "text-5xl font-bold text-black/70 mb-3 hover:text-secondary transition-colors duration-300"} 
                       text={"Sadia Haque"}
                     as={"h1"}
                   />
             
                   <Heading
-                    className={"text:3xl text-secondary lg:text-4xl font-bold lg:leading-16 "}
+                    className={"text:4xl font-bold lg:leading-12 text-black/70"}
                     text={`I'm a MERN Stack Developer`}
                     as={"h1"}
                   />
                 </div>
                 <Heading
-                  className={"text:sm lg:text-lg pr-6 "}
+                  className={"text:sm lg:text-lg text-black/50 -mt-4"}
                   text={"with 4 years of experience."}
                   as={"p"}
                 />
@@ -54,16 +55,16 @@ const Banner = () => {
                       window.open("https://github.com/Sadia-Mila", "_blank")
                     }
                     className={
-                      "py-2 px-3 text-sm bg-gradient-to-r from-secondary to-tirtiary/60 mr-5"
+                      "py-2 px-3 text-md font-bold border-2 border-secondary text-black/60 hover:bg-secondary hover:text-white transition-all duration-300 mr-5"
                     }
                     btnText={"Visit My Work"}
                   />
 
                   <Button
                     className={
-                      " py-2 px-2 bg-gradient-to-r from-secondary to-tirtiary/60 hover:border-1 hover:border-secondary/80 group transition-all duration-300"
+                      "py-2 px-3 text-md font-bold border-2 border-secondary text-black/60 hover:bg-secondary hover:text-white transition-all duration-300"
                     }
-                    btnText={"Download My Resume"}
+                    btnText={"Download CV"}
                     onClick={() => window.open("/CV of Sadia.pdf", "_blank")}
                   />
                 </div>

@@ -4,22 +4,42 @@ import Container from "../Container";
 import Flex from "../Flex";
 import Button from "../Button";
 import { FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ImCross } from "react-icons/im";
-// import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [resNav, setResNav] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   //toggleBtn
   const toggleBtn = () => {
     setResNav(!resNav);
   };
 
+  //sticky top start
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  //sticky top end
+
   return (
-    <>
-      <div className="py-1 bg-gradient-to-r from-blue-200 to-secondary/80">
+
+    <header
+      className={`fixed w-full top-0 left-0 z-50 bg-secondary/80 transition-all duration-500 ${
+        isSticky ? "sticky_header shadow-md" : "bg-transparent"
+      }`}
+    >
+
+      <div className="py-1">
         <Container className={"w-full"}>
           <Flex className={"justify-between "}>
             <div className="">
@@ -36,7 +56,7 @@ const Navbar = () => {
                 <Link to="home" smooth={true} duration={500} offset={-70}>
                   <li
                     className={
-                      "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                      "text-black/80 text-base hover:text-secondary transition-all duration-300"
                     }
                   >
                     HOME
@@ -45,7 +65,7 @@ const Navbar = () => {
                 <Link to="about" smooth={true} duration={500} offset={-70}>
                   <li
                     className={
-                      "font-bold text-white text-base hover:text-tirtiary  transition-all duration-300"
+                      "text-black/80 text-base hover:text-secondary transition-all duration-300"
                     }
                   >
                     ABOUT
@@ -54,7 +74,7 @@ const Navbar = () => {
                 <Link to="service" smooth={true} duration={500} offset={-70}>
                   <li
                     className={
-                      "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                      "text-black/80 text-base hover:text-secondary transition-all duration-300"
                     }
                   >
                     SERVICE
@@ -63,7 +83,7 @@ const Navbar = () => {
                 <Link to="portfolio" smooth={true} duration={500} offset={-70}>
                   <li
                     className={
-                      "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                      "text-black/80 text-base hover:text-secondary transition-all duration-300"
                     }
                   >
                     PORTFOLIO
@@ -72,7 +92,7 @@ const Navbar = () => {
                 <Link to="skills" smooth={true} duration={500} offset={-70}>
                   <li
                     className={
-                      "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                      "text-black/80 text-base hover:text-secondary transition-all duration-300"
                     }
                   >
                     SKILLS
@@ -86,7 +106,7 @@ const Navbar = () => {
                 >
                   <li
                     className={
-                      "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                      "text-black/80 text-base hover:text-secondary transition-all duration-300"
                     }
                   >
                     ACHIEVEMENT
@@ -95,7 +115,7 @@ const Navbar = () => {
                 <Link to="contact" smooth={true} duration={500} offset={-70}>
                   <li
                     className={
-                      "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                      "text-black/80 text-base hover:text-secondary transition-all duration-300"
                     }
                   >
                     CONTACT
@@ -119,7 +139,7 @@ const Navbar = () => {
                   <Link to="home" smooth={true} duration={500} offset={-70}>
                     <li
                       className={
-                        "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                        "text-black/80 text-base hover:text-secondary transition-all duration-300"
                       }
                     >
                       HOME
@@ -128,7 +148,7 @@ const Navbar = () => {
                   <Link to="about" smooth={true} duration={500} offset={-70}>
                     <li
                       className={
-                        "font-bold text-white text-base hover:text-tirtiary  transition-all duration-300"
+                        "text-black/80 text-base hover:text-secondary  transition-all duration-300"
                       }
                     >
                       ABOUT
@@ -137,7 +157,7 @@ const Navbar = () => {
                   <Link to="service" smooth={true} duration={500} offset={-70}>
                     <li
                       className={
-                        "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                        "text-black/80 text-base hover:text-secondary transition-all duration-300"
                       }
                     >
                       SERVICE
@@ -151,7 +171,7 @@ const Navbar = () => {
                   >
                     <li
                       className={
-                        "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                        "text-black/80 text-base hover:text-secondary transition-all duration-300"
                       }
                     >
                       PORTFOLIO
@@ -160,7 +180,7 @@ const Navbar = () => {
                   <Link to="skills" smooth={true} duration={500} offset={-70}>
                     <li
                       className={
-                        "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                        "text-black/80 text-base hover:text-secondary transition-all duration-300"
                       }
                     >
                       SKILLS
@@ -174,7 +194,7 @@ const Navbar = () => {
                   >
                     <li
                       className={
-                        "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                        "text-black/80 text-base hover:text-secondary transition-all duration-300"
                       }
                     >
                       Achievement
@@ -183,7 +203,7 @@ const Navbar = () => {
                   <Link to="contact" smooth={true} duration={500} offset={-70}>
                     <li
                       className={
-                        "font-bold text-white text-base hover:text-tirtiary transition-all duration-300"
+                        "text-black/80 text-base hover:text-secondary transition-all duration-300"
                       }
                     >
                       CONTACT
@@ -197,7 +217,7 @@ const Navbar = () => {
               <Link to="contact">
                 <Button
                   className={
-                    "py-1 px-2 bg-gradient-to-r from-secondary to-tirtiary/60 text-sm"
+                    "py-2 px-3 border-2 border-secondary text-md text-black/60 font-bold hover:bg-secondary hover:text-white shadow-lg transition-all duration-300"
                   }
                   btnText={"Contact Me"}
                 />
@@ -206,7 +226,8 @@ const Navbar = () => {
           </Flex>
         </Container>
       </div>
-    </>
+  </header>
+  
   );
 };
 

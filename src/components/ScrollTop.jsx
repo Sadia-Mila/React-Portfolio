@@ -8,7 +8,7 @@ const ScrollTop = () => {
   return (
     <>   
 
-    <ScrollToTop smooth style={{backgroundColor:'transparent'}} component={<FaArrowCircleUp  color="violet" fontSize="40px" />} />
+    <ScrollToTop smooth style={{backgroundColor:'transparent'}} component={<FaArrowCircleUp  color="blue" fontSize="40px" />} />
 
   
     </>

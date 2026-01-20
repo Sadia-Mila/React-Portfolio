@@ -81,7 +81,7 @@ const Achievements = () => {
                     className="text-4xl font-bold text-blue-600"
                   />
                 </div>
-                <h5 className="text-lg lg:text-2xl font-bold text-center text-black/60 mt-4">
+                <h5 className="text-lg lg:text-xl font-bold text-center text-black/60 mt-4">
                   Certificate Received
                 </h5>
               </div>

@@ -1,12 +1,12 @@
-import Image from "../Image";
-import Logo from "/src/assets/Sadia1-rb.png";
-import Container from "../Container";
-import Flex from "../Flex";
-import Button from "../Button";
-import { FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { Link } from "react-scroll";
+import Button from "../Button";
+import Container from "../Container";
+import Flex from "../Flex";
+import Image from "../Image";
+import Logo from "/src/assets/Sadia1-rb.png";
 
 const Navbar = () => {
   const [resNav, setResNav] = useState(false);
@@ -32,23 +32,24 @@ const Navbar = () => {
   //sticky top end
 
   return (
-
     <header
       className={`fixed w-full top-0 left-0 z-50 bg-secondary/80 transition-all duration-500 ${
         isSticky ? "sticky_header shadow-md" : "bg-transparent"
       }`}
     >
-
       <div className="py-1">
         <Container className={"w-full"}>
           <Flex className={"justify-between "}>
-            <div className="">
-              <Image
-                className={"w-[180px] h-[80px]"}
-                imgSrc={Logo}
-                imgAlt={Logo}
-              />
-            </div>
+            <Link to="home" smooth={true} duration={500} offset={-70}>
+              <div className="">
+                <Image
+                  className={"w-[180px] h-[80px]"}
+                  imgSrc={Logo}
+                  imgAlt={Logo}
+                />
+              </div>
+            </Link>
+
             <nav>
               {/* Desktop View */}
 
@@ -226,8 +227,7 @@ const Navbar = () => {
           </Flex>
         </Container>
       </div>
-  </header>
-  
+    </header>
   );
 };
 

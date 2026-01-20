@@ -196,7 +196,7 @@ const Service = () => {
                         <li className="list-disc [&::marker]:text-secondary leading-5 mb-3">
                           Improve website performance and load speed
                         </li>
-                        <li className="list-disc [&::marker]:text-secondary leading-5 mb-3 ">
+                        <li className="list-disc [&::marker]:text-secondary leading-4.5 mb-3 ">
                           Implement basic on-page SEO (semantic HTML, meta tags,
                           accessibility)
                         </li>

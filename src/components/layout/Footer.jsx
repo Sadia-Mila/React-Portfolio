@@ -107,7 +107,7 @@ const Footer = () => {
 
           <p className="w-[90%] m-auto text-sm lg:text-lg text-black/50 py-6 text-center">
             "Thanks for visiting my portfolio!{" "}
-            <span className="text-tirtiary font-bold">&copy; </span>2025 which
+            <span className="text-secondary font-bold">&copy; </span>2025 which
             is crafted with passion and creativity"
           </p>
         </div>
